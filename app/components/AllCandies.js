@@ -9,11 +9,11 @@ export default class AllCandies extends React.Component {
       <div>
         <p>hey</p>
         <ul>
-        {this.props.candies.map((candy) => {
+        {/* {this.props.candies.map((candy) => {
           return (
             <li key={props.candy.id}>{candy.name}</li>
           )
-        })}
+        })} */}
         </ul>
       </div>
     )

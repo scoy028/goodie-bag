@@ -1,9 +1,8 @@
 import React from 'react'
-import AllCandies from './AllCandies'
 import {Route} from 'react-router-dom'
-import {showAllCandies} from '../store'
+import AllCandies from '../components/AllCandies'
 
-const Root = (props) => {
+const Root = () => {
   return (
     <div>
       <nav>
@@ -12,8 +11,7 @@ const Root = (props) => {
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
         <p>What a nice home page for your goodies!</p>
-        {/* <Route path='/candies' component={AllCandies} /> */}
-        <AllCandies candies={showAllCandies}/>
+        <Route path='/candies' component={AllCandies} />
       </main>
     </div>
   )

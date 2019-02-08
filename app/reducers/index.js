@@ -1,9 +1,5 @@
 import Axios from "axios";
 
-const initialState = {
-  candies: []
-}
-
 //action type
 const SHOW_ALL_CANDIES = 'SHOW_ALL_CANDIES'
 
@@ -20,6 +16,10 @@ export const fetchCandies = () => {
     const action = showAllCandies(candies)
     dispatch(action)
   }
+}
+
+const initialState = {
+  candies: []
 }
 
 //reducer
