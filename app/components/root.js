@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 import AllCandies from '../components/AllCandies'
 
 const Root = () => {
@@ -7,6 +7,10 @@ const Root = () => {
     <div>
       <nav>
         Goodie Bag
+        <ul>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/candies'>Candy Bag</Link></li>
+        </ul>
       </nav>
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
